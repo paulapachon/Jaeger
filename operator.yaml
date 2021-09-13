@@ -30,4 +30,13 @@ spec:
           requests:
             cpu: 100m
             memory: 128Mi
+        env:
+        - name: WATCH_NAMESPACE
+          value: ""
+        - name: POD_NAME
+          value: ""
+        - name: POD_NAMESPACE
+          value: ""
+        - name: OPERATOR_NAME
+          value: "jaeger-operator"
 
